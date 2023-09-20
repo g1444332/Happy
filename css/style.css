@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #F13C8D;
+    overflow: hidden;
+}
+
+.gif-container {
+    max-width: 100%;
+    height: 100%; /* Высота контейнера для гифки (1/10 высоты экрана) */
+    cursor: pointer;
+    position: absolute;
+}
+
+img {
+    max-width: calc(100% * 4);
+    max-height: auto;
+}
+
+
+
+
+
+.ball {
+    display: none;
+    width: 25px;
+    transition: all 0.5s;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 450px;
+    left: 420px;
+}
+
+
+

@@ -1,0 +1,42 @@
+canvas {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text-animation {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: text-appear 2s ease-in-out forwards;
+    position: absolute;
+    left: 35%;
+}
+
+.letter {
+    display: inline-block;
+    transform-origin: 50% 50%;
+    opacity: 0;
+    animation: letter-appear 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    font-family: 'Croissant One', cursive;
+    color: plum;
+    font-size: 100px;
+    /* Добавьте отступы между буквами, например, 10px */
+}
+
+@keyframes text-appear {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes letter-appear {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
